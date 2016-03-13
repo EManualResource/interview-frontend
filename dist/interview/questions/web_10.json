@@ -2,7 +2,7 @@
     "type": "reply",
     "tag": "web",
     "difficulty": "1",
-    "from": "https://github.com/hawx1993/front-end-interview-questions",
+    "from": "https://github.com/qiu-deqing/fe-interview",
     "description": "如何进行网站性能优化",
     "answer": "[雅虎Best Practices for Speeding Up Your Web Site](https://developer.yahoo.com/performance/rules.html)：\n\n- content方面\n    1. 减少HTTP请求：合并文件、CSS精灵、inline Image\n    2. 减少DNS查询：DNS查询完成之前浏览器不能从这个主机下载任何任何文件。方法：DNS缓存、将资源分布到恰当数量的主机名，平衡并行下载和DNS查询\n    3. 避免重定向：多余的中间访问\n    4. 使Ajax可缓存\n    5. 非必须组件延迟加载\n    6. 未来所需组件预加载\n    7. 减少DOM元素数量\n    8. 将资源放到不同的域下：浏览器同时从一个域下载资源的数目有限，增加域可以提高并行下载量\n    9. 减少iframe数量\n    10. 不要404\n\n- Server方面\n    1. 使用CDN\n    2. 添加Expires或者Cache-Control响应头\n    3. 对组件使用Gzip压缩\n    4. 配置ETag\n    5. Flush Buffer Early\n    6. Ajax使用GET进行请求\n    7. 避免空src的img标签\n- Cookie方面\n    1. 减小cookie大小\n    2. 引入资源的域名不要包含cookie\n- css方面\n    1. 将样式表放到页面顶部\n    2. 不使用CSS表达式\n    3. 使用<link>不使用@import\n    4. 不使用IE的Filter\n- Javascript方面\n    1. 将脚本放到页面底部\n    2. 将javascript和css从外部引入\n    3. 压缩javascript和css\n    4. 删除不需要的脚本\n    5. 减少DOM访问\n    6. 合理设计事件监听器\n- 图片方面\n    1. 优化图片：根据实际颜色需要选择色深、压缩\n    2. 优化css精灵\n    3. 不要在HTML中拉伸图片\n    4. 保证favicon.ico小并且可缓存\n- 移动方面\n    1. 保证组件小于25k\n    2. Pack Components into a Multipart Document",
     "options": []

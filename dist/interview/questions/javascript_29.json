@@ -2,7 +2,7 @@
     "type": "reply",
     "tag": "javascript",
     "difficulty": "1",
-    "from": "https://github.com/hawx1993/front-end-interview-questions",
+    "from": "https://github.com/qiu-deqing/fe-interview",
     "description": "补充代码,鼠标单击Button1后将Button1移动到Button2的后面",
     "answer": "<!doctype html>\n    <html>\n    <head>\n        <meta charset=\"utf-8\">\n        <title>TEst</title>\n    </head>\n    <body>\n\n    <div>\n       <input type=\"button\" id =\"button1\" value=\"1\" />\n       <input type=\"button\" id =\"button2\" value=\"2\" />\n    </div>\n\n    <script type=\"text/javascript\">\n        var btn1 = document.getElementById('button1');\n        var btn2 = document.getElementById('button2');\n\n        addListener(btn1, 'click', function (event) {\n            btn1.parentNode.insertBefore(btn2, btn1);\n        });\n\n        function addListener(elem, type, handler) {\n            if (elem.addEventListener) {\n                elem.addEventListener(type, handler, false);\n                return handler;\n            } else if (elem.attachEvent) {\n                function wrapper() {\n                    var event = window.event;\n                    event.target = event.srcElement;\n                    handler.call(elem, event);\n                }\n                elem.attachEvent('on' + type, wrapper);\n                return wrapper;\n            }\n        }\n\n    </script>\n    </body>\n    </html>",
     "options": []

@@ -2,7 +2,7 @@
     "type": "reply",
     "tag": "javascript",
     "difficulty": "1",
-    "from": "https://github.com/hawx1993/front-end-interview-questions",
+    "from": "https://github.com/qiu-deqing/fe-interview",
     "description": "编写javascript深度克隆函数deepClone",
     "answer": "function deepClone(obj) {\n        var _toString = Object.prototype.toString;\n\n        // null, undefined, non-object, function\n        if (!obj || typeof obj !== 'object') {\n            return obj;\n        }\n\n        // DOM Node\n        if (obj.nodeType && 'cloneNode' in obj) {\n            return obj.cloneNode(true);\n        }\n\n        // Date\n        if (_toString.call(obj) === '[object Date]') {\n            return new Date(obj.getTime());\n        }\n\n        // RegExp\n        if (_toString.call(obj) === '[object RegExp]') {\n            var flags = [];\n            if (obj.global) { flags.push('g'); }\n            if (obj.multiline) { flags.push('m'); }\n            if (obj.ignoreCase) { flags.push('i'); }\n\n            return new RegExp(obj.source, flags.join(''));\n        }\n\n        var result = Array.isArray(obj) ? [] :\n            obj.constructor ? new obj.constructor() : {};\n\n        for (var key in obj ) {\n            result[key] = deepClone(obj[key]);\n        }\n\n        return result;\n    }\n\n    function A() {\n        this.a = a;\n    }\n\n    var a = {\n        name: 'qiu',\n        birth: new Date(),\n        pattern: /qiu/gim,\n        container: document.body,\n        hobbys: ['book', new Date(), /aaa/gim, 111]\n    };\n\n    var c = new A();\n    var b = deepClone(c);\n    console.log(c.a === b.a);\n    console.log(c, b);",
     "options": []

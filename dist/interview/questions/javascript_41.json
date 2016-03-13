@@ -2,7 +2,7 @@
     "type": "reply",
     "tag": "javascript",
     "difficulty": "1",
-    "from": "https://github.com/hawx1993/front-end-interview-questions",
+    "from": "https://github.com/qiu-deqing/fe-interview",
     "description": "编写一个函数将列表子元素顺序反转",
     "answer": "```\n<ul id=\"target\">\n    <li>1</li>\n    <li>2</li>\n    <li>3</li>\n    <li>4</li>\n</ul>\n\n<script>\n    var target = document.getElementById('target');\n    var i;\n    var frag = document.createDocumentFragment();\n\n    for (i = target.children.length - 1; i &gt;= 0; --i) {\n        frag.appendChild(target.children[i]);\n    }\n    target.appendChild(frag);\n</script>\n```",
     "options": []

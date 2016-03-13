@@ -2,7 +2,7 @@
     "type": "reply",
     "tag": "css",
     "difficulty": "1",
-    "from": "https://github.com/hawx1993/front-end-interview-questions",
+    "from": "https://github.com/qiu-deqing/fe-interview",
     "description": "CSS有哪些继承属性",
     "answer": "- 关于文字排版的属性如：\n  +  [font](https://developer.mozilla.org/en-US/docs/Web/CSS/font)\n  +  [word-break](https://developer.mozilla.org/en-US/docs/Web/CSS/word-break)\n  +  [letter-spacing](https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing)\n  +  [text-align](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align)\n  +  [text-rendering](https://developer.mozilla.org/en-US/docs/Web/CSS/text-rendering)\n  +  [word-spacing](https://developer.mozilla.org/en-US/docs/Web/CSS/word-spacing)\n  +  [white-space](https://developer.mozilla.org/en-US/docs/Web/CSS/white-space)\n  +  [text-indent](https://developer.mozilla.org/en-US/docs/Web/CSS/text-indent)\n  +  [text-transform](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform)\n  +  [text-shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow)\n- [line-height](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height)\n- [color](https://developer.mozilla.org/en-US/docs/Web/CSS/color)\n- [visibility](https://developer.mozilla.org/en-US/docs/Web/CSS/visibility)\n- [cursor](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor)",
     "options": []

@@ -7,7 +7,7 @@ const SOURCE_IMG_DIR = './source/img'
 const DEST_IMG_DIR = '../../questions/img'
 
 //资料来源
-let from = 'https://github.com/hawx1993/Front-end-Interview-questions'
+let from = 'https://github.com/qiu-deqing/FE-interview'
 let source = {
   'web': './source/web.md',
   'javascript': './source/javascript.md',

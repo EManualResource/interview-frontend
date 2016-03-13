@@ -2,7 +2,7 @@
     "type": "reply",
     "tag": "web",
     "difficulty": "1",
-    "from": "https://github.com/hawx1993/front-end-interview-questions",
+    "from": "https://github.com/qiu-deqing/fe-interview",
     "description": "web开发中会话跟踪的方法有哪些",
     "answer": "1. cookie\n2. session\n3. url重写\n4. 隐藏input\n5. ip地址",
     "options": []

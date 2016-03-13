@@ -2,7 +2,7 @@
     "type": "reply",
     "tag": "javascript",
     "difficulty": "1",
-    "from": "https://github.com/hawx1993/front-end-interview-questions",
+    "from": "https://github.com/qiu-deqing/fe-interview",
     "description": "以下函数的作用是?空白区域应该填写什么",
     "answer": "```\n// define\n(function (window) {\n    function fn(str) {\n        this.str = str;\n    }\n\n    fn.prototype.format = function () {\n        var arg = __1__;\n        return this.str.replace(__2__, function (a, b) {\n            return arg[b] || '';\n        });\n    };\n\n    window.fn = fn;\n})(window);\n\n// use\n(function () {\n    var t = new fn('<p><a href=\"{0}\">{1}</a><span>{2}</span></p>');\n    console.log(t.format('http://www.alibaba.com', 'Alibaba', 'Welcome'));\n})();\n```\n\ndefine部分定义一个简单的模板类，使用{}作为转义标记，中间的数字表示替换目标，format实参用来替换模板内标记\n横线处填：\n\n1. ``Array.prototype.slice.call(arguments, 0)``\n2. ``/\\{\\s*(\\d+)\\s*\\}/g``",
     "options": []
