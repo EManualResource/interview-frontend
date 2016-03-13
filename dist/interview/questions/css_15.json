@@ -3,7 +3,7 @@
     "tag": "css",
     "difficulty": "1",
     "from": "https://github.com/qiu-deqing/fe-interview",
-    "description": "如何确定一个元素的包含块(containing block)",
-    "answer": "1. 根元素的包含块叫做初始包含块，在连续媒体中他的尺寸与viewport相同并且anchored at the canvas origin；对于paged media，它的尺寸等于page area。初始包含块的direction属性与根元素相同。\n2. ``position``为``relative``或者``static``的元素，它的包含块由最近的块级（``display``为``block``,``list-item``, ``table``）祖先元素的**内容框**组成\n3. 如果元素``position``为``fixed``。对于连续媒体，它的包含块为viewport；对于paged media，包含块为page area\n4. 如果元素``position``为``absolute``，它的包含块由祖先元素中最近一个``position``为``relative``,``absolute``或者``fixed``的元素产生，规则如下：\n    - 如果祖先元素为行内元素，the containing block is the bounding box around the **padding boxes** of the first and the last inline boxes generated for that element.\n    - 其他情况下包含块由祖先节点的**padding edge**组成\n\n    如果找不到定位的祖先元素，包含块为**初始包含块**",
+    "description": "<p>如何确定一个元素的包含块(containing block)</p>\n",
+    "answer": "<ol>\n<li>根元素的包含块叫做初始包含块，在连续媒体中他的尺寸与viewport相同并且anchored at the canvas origin；对于paged media，它的尺寸等于page area。初始包含块的direction属性与根元素相同。</li>\n<li><code>position</code>为<code>relative</code>或者<code>static</code>的元素，它的包含块由最近的块级（<code>display</code>为<code>block</code>,<code>list-item</code>, <code>table</code>）祖先元素的<strong>内容框</strong>组成</li>\n<li>如果元素<code>position</code>为<code>fixed</code>。对于连续媒体，它的包含块为viewport；对于paged media，包含块为page area</li>\n<li><p>如果元素<code>position</code>为<code>absolute</code>，它的包含块由祖先元素中最近一个<code>position</code>为<code>relative</code>,<code>absolute</code>或者<code>fixed</code>的元素产生，规则如下：</p>\n<ul>\n<li>如果祖先元素为行内元素，the containing block is the bounding box around the <strong>padding boxes</strong> of the first and the last inline boxes generated for that element.</li>\n<li><p>其他情况下包含块由祖先节点的<strong>padding edge</strong>组成</p>\n<p>如果找不到定位的祖先元素，包含块为<strong>初始包含块</strong></p>\n</li>\n</ul>\n</li>\n</ol>\n",
     "options": []
 }

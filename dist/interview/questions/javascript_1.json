@@ -3,7 +3,7 @@
     "tag": "javascript",
     "difficulty": "1",
     "from": "https://github.com/qiu-deqing/fe-interview",
-    "description": "offsetWidth/offsetHeight,clientWidth/clientHeight与scrollWidth/scrollHeight的区别",
-    "answer": "- offsetWidth/offsetHeight返回值包含**content + padding + border**，效果与e.getBoundingClientRect()相同\n- clientWidth/clientHeight返回值只包含**content + padding**，如果有滚动条，也**不包含滚动条**\n- scrollWidth/scrollHeight返回值包含**content + padding + 溢出内容的尺寸**\n\n[Measuring Element Dimension and Location with CSSOM in Windows Internet Explorer 9](http://msdn.microsoft.com/en-us/library/ie/hh781509(v=vs.85).aspx)\n\n![元素尺寸](img/element-size.png)",
+    "description": "<p>offsetWidth/offsetHeight,clientWidth/clientHeight与scrollWidth/scrollHeight的区别</p>\n",
+    "answer": "<ul>\n<li>offsetWidth/offsetHeight返回值包含<strong>content + padding + border</strong>，效果与e.getBoundingClientRect()相同</li>\n<li>clientWidth/clientHeight返回值只包含<strong>content + padding</strong>，如果有滚动条，也<strong>不包含滚动条</strong></li>\n<li>scrollWidth/scrollHeight返回值包含<strong>content + padding + 溢出内容的尺寸</strong></li>\n</ul>\n<p><a href=\"http://msdn.microsoft.com/en-us/library/ie/hh781509(v=vs.85\">Measuring Element Dimension and Location with CSSOM in Windows Internet Explorer 9</a>.aspx)</p>\n<p><img src=\"img/element-size.png\" alt=\"元素尺寸\"></p>\n",
     "options": []
 }

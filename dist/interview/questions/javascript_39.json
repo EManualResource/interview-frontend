@@ -3,7 +3,7 @@
     "tag": "javascript",
     "difficulty": "1",
     "from": "https://github.com/qiu-deqing/fe-interview",
-    "description": "现有一个字符串richText,是一段富文本,需要显示在页面上.有个要求,需要给其中只包含一个img元素的p标签增加一个叫pic的class.请编写代码实现.可以使用jQuery或KISSY.",
-    "answer": "function richText(text) {\n        var div = document.createElement('div');\n        div.innerHTML = text;\n        var p = div.getElementsByTagName('p');\n        var i, len;\n\n        for (i = 0, len = p.length; i < len; ++i) {\n            if (p[i].getElementsByTagName('img').length === 1) {\n                p[i].classList.add('pic');\n            }\n        }\n\n        return div.innerHTML;\n    }",
+    "description": "<p>现有一个字符串richText,是一段富文本,需要显示在页面上.有个要求,需要给其中只包含一个img元素的p标签增加一个叫pic的class.请编写代码实现.可以使用jQuery或KISSY.</p>\n",
+    "answer": "<p>function richText(text) {\n        var div = document.createElement(&#39;div&#39;);\n        div.innerHTML = text;\n        var p = div.getElementsByTagName(&#39;p&#39;);\n        var i, len;</p>\n<pre><code>    for (i = 0, len = p.length; i &lt; len; ++i) {\n        if (p[i].getElementsByTagName(&#39;img&#39;).length === 1) {\n            p[i].classList.add(&#39;pic&#39;);\n        }\n    }\n\n    return div.innerHTML;\n}\n</code></pre>",
     "options": []
 }

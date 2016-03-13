@@ -3,7 +3,7 @@
     "tag": "css",
     "difficulty": "1",
     "from": "https://github.com/qiu-deqing/fe-interview",
-    "description": "`link`与`@import`的区别",
-    "answer": "1. ``link``是HTML方式， ``@import``是CSS方式\n2. ``link``最大限度支持并行下载，``@import``过多嵌套导致串行下载，出现[FOUC](http://www.bluerobot.com/web/css/fouc.asp/)\n4. ``link``可以通过``rel=\"alternate stylesheet\"``指定候选样式\n5. 浏览器对``link``支持早于``@import``，可以使用``@import``对老浏览器隐藏样式\n6. ``@import``必须在样式规则之前，可以在css文件中引用其他文件\n6. 总体来说：**[link优于@import](http://www.stevesouders.com/blog/2009/04/09/dont-use-import/)**",
+    "description": "<p><code>link</code>与<code>@import</code>的区别</p>\n",
+    "answer": "<ol>\n<li><code>link</code>是HTML方式， <code>@import</code>是CSS方式</li>\n<li><code>link</code>最大限度支持并行下载，<code>@import</code>过多嵌套导致串行下载，出现<a href=\"http://www.bluerobot.com/web/css/fouc.asp/\">FOUC</a></li>\n<li><code>link</code>可以通过<code>rel=&quot;alternate stylesheet&quot;</code>指定候选样式</li>\n<li>浏览器对<code>link</code>支持早于<code>@import</code>，可以使用<code>@import</code>对老浏览器隐藏样式</li>\n<li><code>@import</code>必须在样式规则之前，可以在css文件中引用其他文件</li>\n<li>总体来说：<strong><a href=\"http://www.stevesouders.com/blog/2009/04/09/dont-use-import/\">link优于@import</a></strong></li>\n</ol>\n",
     "options": []
 }

@@ -3,7 +3,7 @@
     "tag": "javascript",
     "difficulty": "1",
     "from": "https://github.com/qiu-deqing/fe-interview",
-    "description": "编写一个函数将列表子元素顺序反转",
-    "answer": "```\n<ul id=\"target\">\n    <li>1</li>\n    <li>2</li>\n    <li>3</li>\n    <li>4</li>\n</ul>\n\n<script>\n    var target = document.getElementById('target');\n    var i;\n    var frag = document.createDocumentFragment();\n\n    for (i = target.children.length - 1; i &gt;= 0; --i) {\n        frag.appendChild(target.children[i]);\n    }\n    target.appendChild(frag);\n</script>\n```",
+    "description": "<p>编写一个函数将列表子元素顺序反转</p>\n",
+    "answer": "<pre><code>&lt;ul id=&quot;target&quot;&gt;\n    &lt;li&gt;1&lt;/li&gt;\n    &lt;li&gt;2&lt;/li&gt;\n    &lt;li&gt;3&lt;/li&gt;\n    &lt;li&gt;4&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;script&gt;\n    var target = document.getElementById(&#39;target&#39;);\n    var i;\n    var frag = document.createDocumentFragment();\n\n    for (i = target.children.length - 1; i &amp;gt;= 0; --i) {\n        frag.appendChild(target.children[i]);\n    }\n    target.appendChild(frag);\n&lt;/script&gt;\n</code></pre>",
     "options": []
 }

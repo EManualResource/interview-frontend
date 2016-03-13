@@ -3,7 +3,7 @@
     "tag": "css",
     "difficulty": "1",
     "from": "https://github.com/qiu-deqing/fe-interview",
-    "description": "stacking context,布局规则",
-    "answer": "z轴上的默认层叠顺序如下（从下到上）：\n\n1. 根元素的边界和背景\n2. 常规流中的元素按照html中顺序\n3. 浮动块\n4. positioned元素按照html中出现顺序\n\n如何创建stacking context：\n\n1. 根元素\n2. z-index不为auto的定位元素\n3. a flex item with a z-index value other than 'auto'\n4. opacity小于1的元素\n5. 在移动端webkit和chrome22+，z-index为auto，position: fixed也将创建新的stacking context",
+    "description": "<p>stacking context,布局规则</p>\n",
+    "answer": "<p>z轴上的默认层叠顺序如下（从下到上）：</p>\n<ol>\n<li>根元素的边界和背景</li>\n<li>常规流中的元素按照html中顺序</li>\n<li>浮动块</li>\n<li>positioned元素按照html中出现顺序</li>\n</ol>\n<p>如何创建stacking context：</p>\n<ol>\n<li>根元素</li>\n<li>z-index不为auto的定位元素</li>\n<li>a flex item with a z-index value other than &#39;auto&#39;</li>\n<li>opacity小于1的元素</li>\n<li>在移动端webkit和chrome22+，z-index为auto，position: fixed也将创建新的stacking context</li>\n</ol>\n",
     "options": []
 }

@@ -3,7 +3,7 @@
     "tag": "javascript",
     "difficulty": "1",
     "from": "https://github.com/qiu-deqing/fe-interview",
-    "description": "完成下面的tool-tip",
-    "answer": "![xxx](img/tip-box.jpg)",
+    "description": "<p>完成下面的tool-tip</p>\n",
+    "answer": "<p><img src=\"img/tip-box.jpg\" alt=\"xxx\"></p>\n",
     "options": []
 }

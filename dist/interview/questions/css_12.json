@@ -3,7 +3,7 @@
     "tag": "css",
     "difficulty": "1",
     "from": "https://github.com/qiu-deqing/fe-interview",
-    "description": "如何创建块级格式化上下文(block formatting context),BFC有什么用",
-    "answer": "创建规则：\n\n1. 根元素\n2. 浮动元素（``float``不是``none``）\n3. 绝对定位元素（``position``取值为``absolute``或``fixed``）\n4. ``display``取值为``inline-block``,``table-cell``, ``table-caption``,``flex``, ``inline-flex``之一的元素\n5. ``overflow``不是``visible``的元素\n\n\n作用：\n\n1. 可以包含浮动元素\n2. 不被浮动元素覆盖\n3. 阻止父子元素的margin折叠",
+    "description": "<p>如何创建块级格式化上下文(block formatting context),BFC有什么用</p>\n",
+    "answer": "<p>创建规则：</p>\n<ol>\n<li>根元素</li>\n<li>浮动元素（<code>float</code>不是<code>none</code>）</li>\n<li>绝对定位元素（<code>position</code>取值为<code>absolute</code>或<code>fixed</code>）</li>\n<li><code>display</code>取值为<code>inline-block</code>,<code>table-cell</code>, <code>table-caption</code>,<code>flex</code>, <code>inline-flex</code>之一的元素</li>\n<li><code>overflow</code>不是<code>visible</code>的元素</li>\n</ol>\n<p>作用：</p>\n<ol>\n<li>可以包含浮动元素</li>\n<li>不被浮动元素覆盖</li>\n<li>阻止父子元素的margin折叠</li>\n</ol>\n",
     "options": []
 }

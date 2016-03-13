@@ -3,7 +3,7 @@
     "tag": "css",
     "difficulty": "1",
     "from": "https://github.com/qiu-deqing/fe-interview",
-    "description": "display,float,position的关系",
-    "answer": "1. 如果``display``为none，那么position和float都不起作用，这种情况下元素不产生框\n2. 否则，如果position值为absolute或者fixed，框就是绝对定位的，float的计算值为none，display根据下面的表格进行调整。\n3. 否则，如果float不是none，框是浮动的，display根据下表进行调整\n4. 否则，如果元素是根元素，display根据下表进行调整\n5. 其他情况下display的值为指定值\n总结起来：**绝对定位、浮动、根元素都需要调整``display``**\n![display转换规则](img/display-adjust.png)",
+    "description": "<p>display,float,position的关系</p>\n",
+    "answer": "<ol>\n<li>如果<code>display</code>为none，那么position和float都不起作用，这种情况下元素不产生框</li>\n<li>否则，如果position值为absolute或者fixed，框就是绝对定位的，float的计算值为none，display根据下面的表格进行调整。</li>\n<li>否则，如果float不是none，框是浮动的，display根据下表进行调整</li>\n<li>否则，如果元素是根元素，display根据下表进行调整</li>\n<li>其他情况下display的值为指定值\n总结起来：<strong>绝对定位、浮动、根元素都需要调整<code>display</code></strong>\n<img src=\"img/display-adjust.png\" alt=\"display转换规则\"></li>\n</ol>\n",
     "options": []
 }

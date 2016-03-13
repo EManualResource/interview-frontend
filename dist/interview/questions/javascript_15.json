@@ -3,7 +3,7 @@
     "tag": "javascript",
     "difficulty": "1",
     "from": "https://github.com/qiu-deqing/fe-interview",
-    "description": "==运算符判断相等的流程是怎样的",
-    "answer": "1. 如果两个值类型相同，按照===比较方法进行比较\n2. 如果类型不同，使用如下规则进行比较\n  1. 如果其中一个值是null，另一个是undefined，它们相等\n  2. 如果一个值是**数字**另一个是**字符串**，将**字符串转换为数字**进行比较\n  3. 如果有布尔类型，将**true转换为1，false转换为0**，然后用==规则继续比较\n  4. 如果一个值是对象，另一个是数字或字符串，将对象转换为原始值然后用==规则继续比较\n  5. **其他所有情况都认为不相等**",
+    "description": "<p>==运算符判断相等的流程是怎样的</p>\n",
+    "answer": "<ol>\n<li>如果两个值类型相同，按照===比较方法进行比较</li>\n<li>如果类型不同，使用如下规则进行比较<ol>\n<li>如果其中一个值是null，另一个是undefined，它们相等</li>\n<li>如果一个值是<strong>数字</strong>另一个是<strong>字符串</strong>，将<strong>字符串转换为数字</strong>进行比较</li>\n<li>如果有布尔类型，将<strong>true转换为1，false转换为0</strong>，然后用==规则继续比较</li>\n<li>如果一个值是对象，另一个是数字或字符串，将对象转换为原始值然后用==规则继续比较</li>\n<li><strong>其他所有情况都认为不相等</strong></li>\n</ol>\n</li>\n</ol>\n",
     "options": []
 }

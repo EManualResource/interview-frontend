@@ -3,7 +3,7 @@
     "tag": "javascript",
     "difficulty": "1",
     "from": "https://github.com/qiu-deqing/fe-interview",
-    "description": "javascript有哪些方法定义对象",
-    "answer": "1. 对象字面量： `var obj = {};`\n2. 构造函数： `var obj = new Object();`\n3. Object.create(): `var obj = Object.create(Object.prototype);`",
+    "description": "<p>javascript有哪些方法定义对象</p>\n",
+    "answer": "<ol>\n<li>对象字面量： <code>var obj = {};</code></li>\n<li>构造函数： <code>var obj = new Object();</code></li>\n<li>Object.create(): <code>var obj = Object.create(Object.prototype);</code></li>\n</ol>\n",
     "options": []
 }

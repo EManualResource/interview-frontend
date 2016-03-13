@@ -3,7 +3,7 @@
     "tag": "javascript",
     "difficulty": "1",
     "from": "https://github.com/qiu-deqing/fe-interview",
-    "description": "javascript有哪几种方法定义函数",
-    "answer": "1. [函数声明表达式](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)\n2. [function操作符](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function)\n3. [Function 构造函数](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)\n4. [ES6:arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/arrow_functions)\n\n重要参考资料：[MDN:Functions_and_function_scope](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope)",
+    "description": "<p>javascript有哪几种方法定义函数</p>\n",
+    "answer": "<ol>\n<li><a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function\">函数声明表达式</a></li>\n<li><a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function\">function操作符</a></li>\n<li><a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function\">Function 构造函数</a></li>\n<li><a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/arrow_functions\">ES6:arrow function</a></li>\n</ol>\n<p>重要参考资料：<a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope\">MDN:Functions_and_function_scope</a></p>\n",
     "options": []
 }

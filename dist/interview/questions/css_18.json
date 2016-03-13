@@ -3,7 +3,7 @@
     "tag": "css",
     "difficulty": "1",
     "from": "https://github.com/qiu-deqing/fe-interview",
-    "description": "如何竖直居中一个元素",
-    "answer": "参考资料：[6 Methods For Vertical Centering With CSS](http://www.vanseodesign.com/css/vertical-centering/)。 [盘点8种CSS实现垂直居中](http://blog.csdn.net/freshlover/article/details/11579669)\n\n- 需要居中元素为**单行文本**，为包含文本的元素设置大于`font-size`的`line-height`：\n\n```\n<p class=\"text\">center text</p>\n\n<style>\n.text {\n    line-height: 200px;\n}\n</style>\n```",
+    "description": "<p>如何竖直居中一个元素</p>\n",
+    "answer": "<p>参考资料：<a href=\"http://www.vanseodesign.com/css/vertical-centering/\">6 Methods For Vertical Centering With CSS</a>。 <a href=\"http://blog.csdn.net/freshlover/article/details/11579669\">盘点8种CSS实现垂直居中</a></p>\n<ul>\n<li>需要居中元素为<strong>单行文本</strong>，为包含文本的元素设置大于<code>font-size</code>的<code>line-height</code>：</li>\n</ul>\n<pre><code>&lt;p class=&quot;text&quot;&gt;center text&lt;/p&gt;\n\n&lt;style&gt;\n.text {\n    line-height: 200px;\n}\n&lt;/style&gt;\n</code></pre>",
     "options": []
 }

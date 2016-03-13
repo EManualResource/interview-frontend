@@ -3,7 +3,7 @@
     "tag": "web",
     "difficulty": "1",
     "from": "https://github.com/qiu-deqing/fe-interview",
-    "description": "HTTP method",
-    "answer": "1. 一台服务器要与HTTP1.1兼容，只要为资源实现**GET**和**HEAD**方法即可\n2. **GET**是最常用的方法，通常用于**请求服务器发送某个资源**。\n3. **HEAD**与GET类似，但**服务器在响应中值返回首部，不返回实体的主体部分**\n4. **PUT**让服务器**用请求的主体部分来创建一个由所请求的URL命名的新文档，或者，如果那个URL已经存在的话，就用干这个主体替代它**\n5. **POST**起初是用来向服务器输入数据的。实际上，通常会用它来支持HTML的表单。表单中填好的数据通常会被送给服务器，然后由服务器将其发送到要去的地方。\n6. **TRACE**会在目的服务器端发起一个环回诊断，最后一站的服务器会弹回一个TRACE响应并在响应主体中携带它收到的原始请求报文。TRACE方法主要用于诊断，用于验证请求是否如愿穿过了请求/响应链。\n7. **OPTIONS**方法请求web服务器告知其支持的各种功能。可以查询服务器支持哪些方法或者对某些特殊资源支持哪些方法。\n8. **DELETE**请求服务器删除请求URL指定的资源",
+    "description": "<p>HTTP method</p>\n",
+    "answer": "<ol>\n<li>一台服务器要与HTTP1.1兼容，只要为资源实现<strong>GET</strong>和<strong>HEAD</strong>方法即可</li>\n<li><strong>GET</strong>是最常用的方法，通常用于<strong>请求服务器发送某个资源</strong>。</li>\n<li><strong>HEAD</strong>与GET类似，但<strong>服务器在响应中值返回首部，不返回实体的主体部分</strong></li>\n<li><strong>PUT</strong>让服务器<strong>用请求的主体部分来创建一个由所请求的URL命名的新文档，或者，如果那个URL已经存在的话，就用干这个主体替代它</strong></li>\n<li><strong>POST</strong>起初是用来向服务器输入数据的。实际上，通常会用它来支持HTML的表单。表单中填好的数据通常会被送给服务器，然后由服务器将其发送到要去的地方。</li>\n<li><strong>TRACE</strong>会在目的服务器端发起一个环回诊断，最后一站的服务器会弹回一个TRACE响应并在响应主体中携带它收到的原始请求报文。TRACE方法主要用于诊断，用于验证请求是否如愿穿过了请求/响应链。</li>\n<li><strong>OPTIONS</strong>方法请求web服务器告知其支持的各种功能。可以查询服务器支持哪些方法或者对某些特殊资源支持哪些方法。</li>\n<li><strong>DELETE</strong>请求服务器删除请求URL指定的资源</li>\n</ol>\n",
     "options": []
 }

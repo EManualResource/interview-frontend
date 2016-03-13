@@ -3,7 +3,7 @@
     "tag": "javascript",
     "difficulty": "1",
     "from": "https://github.com/qiu-deqing/fe-interview",
-    "description": "javascript有哪几种数据类型",
-    "answer": "六种基本数据类型\n\n- undefined\n- null\n- string\n- boolean\n- number\n- [symbol](https://developer.mozilla.org/en-US/docs/Glossary/Symbol)(ES6)\n\n一种引用类型\n\n- Object",
+    "description": "<p>javascript有哪几种数据类型</p>\n",
+    "answer": "<p>六种基本数据类型</p>\n<ul>\n<li>undefined</li>\n<li>null</li>\n<li>string</li>\n<li>boolean</li>\n<li>number</li>\n<li><a href=\"https://developer.mozilla.org/en-US/docs/Glossary/Symbol\">symbol</a>(ES6)</li>\n</ul>\n<p>一种引用类型</p>\n<ul>\n<li>Object</li>\n</ul>\n",
     "options": []
 }

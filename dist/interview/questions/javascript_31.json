@@ -3,7 +3,7 @@
     "tag": "javascript",
     "difficulty": "1",
     "from": "https://github.com/qiu-deqing/fe-interview",
-    "description": "完成一个函数,接受数组作为参数,数组元素为整数或者数组,数组元素包含整数或数组,函数返回扁平化后的数组",
-    "answer": "如：[1, [2, [ [3, 4], 5], 6]] => [1, 2, 3, 4, 5, 6]\n\n```\n    var data =  [1, [2, [ [3, 4], 5], 6]];\n\n    function flat(data, result) {\n        var i, d, len;\n        for (i = 0, len = data.length; i < len; ++i) {\n            d = data[i];\n            if (typeof d === 'number') {\n                result.push(d);\n            } else {\n                flat(d, result);\n            }\n        }\n    }\n\n    var result = [];\n    flat(data, result);\n\n    console.log(result);\n```",
+    "description": "<p>完成一个函数,接受数组作为参数,数组元素为整数或者数组,数组元素包含整数或数组,函数返回扁平化后的数组</p>\n",
+    "answer": "<p>如：[1, [2, [ [3, 4], 5], 6]] =&gt; [1, 2, 3, 4, 5, 6]</p>\n<pre><code>    var data =  [1, [2, [ [3, 4], 5], 6]];\n\n    function flat(data, result) {\n        var i, d, len;\n        for (i = 0, len = data.length; i &lt; len; ++i) {\n            d = data[i];\n            if (typeof d === &#39;number&#39;) {\n                result.push(d);\n            } else {\n                flat(d, result);\n            }\n        }\n    }\n\n    var result = [];\n    flat(data, result);\n\n    console.log(result);\n</code></pre>",
     "options": []
 }

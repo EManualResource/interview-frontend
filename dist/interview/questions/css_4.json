@@ -3,7 +3,7 @@
     "tag": "css",
     "difficulty": "1",
     "from": "https://github.com/qiu-deqing/fe-interview",
-    "description": "specified value,computed value,used value计算方法",
-    "answer": "- specified value: 计算方法如下：\n    1. 如果样式表设置了一个值，使用这个值\n    2. 如果没有设置值，这个属性是继承属性，从父元素继承\n    3. 如果没设置，并且不是继承属性，使用css规范指定的初始值\n\n- computed value: 以specified value根据规范定义的行为进行计算，通常将相对值计算为绝对值，例如em根据font-size进行计算。一些使用百分数并且需要布局来决定最终值的属性，如width，margin。百分数就直接作为computed value。line-height的无单位值也直接作为computed value。这些值将在计算used value时得到绝对值。**computed value的主要作用是用于继承**\n\n- used value：属性计算后的最终值，对于大多数属性可以通过window.getComputedStyle获得，尺寸值单位为像素。以下属性依赖于布局，\n    - background-position\n    - bottom, left, right, top\n    - height, width\n    - margin-bottom, margin-left, margin-right, margin-top\n    - min-height, min-width\n    - padding-bottom, padding-left, padding-right, padding-top\n    - text-indent",
+    "description": "<p>specified value,computed value,used value计算方法</p>\n",
+    "answer": "<ul>\n<li><p>specified value: 计算方法如下：</p>\n<ol>\n<li>如果样式表设置了一个值，使用这个值</li>\n<li>如果没有设置值，这个属性是继承属性，从父元素继承</li>\n<li>如果没设置，并且不是继承属性，使用css规范指定的初始值</li>\n</ol>\n</li>\n<li><p>computed value: 以specified value根据规范定义的行为进行计算，通常将相对值计算为绝对值，例如em根据font-size进行计算。一些使用百分数并且需要布局来决定最终值的属性，如width，margin。百分数就直接作为computed value。line-height的无单位值也直接作为computed value。这些值将在计算used value时得到绝对值。<strong>computed value的主要作用是用于继承</strong></p>\n</li>\n<li><p>used value：属性计算后的最终值，对于大多数属性可以通过window.getComputedStyle获得，尺寸值单位为像素。以下属性依赖于布局，</p>\n<ul>\n<li>background-position</li>\n<li>bottom, left, right, top</li>\n<li>height, width</li>\n<li>margin-bottom, margin-left, margin-right, margin-top</li>\n<li>min-height, min-width</li>\n<li>padding-bottom, padding-left, padding-right, padding-top</li>\n<li>text-indent</li>\n</ul>\n</li>\n</ul>\n",
     "options": []
 }

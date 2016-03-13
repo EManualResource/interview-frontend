@@ -3,7 +3,7 @@
     "tag": "javascript",
     "difficulty": "1",
     "from": "https://github.com/qiu-deqing/fe-interview",
-    "description": "javascript跨域通信",
-    "answer": "同源：两个文档同源需满足\n\n1. 协议相同\n2. 域名相同\n3. 端口相同\n\n跨域通信：js进行DOM操作、通信时如果目标与当前窗口不满足同源条件，浏览器为了安全会阻止跨域操作。跨域通信通常有以下方法\n\n- 如果是log之类的简单**单项通信**，新建``<img>``,``<script>``,``<link>``,``<iframe>``元素，通过src，href属性设置为目标url。实现跨域请求\n- 如果请求**json数据**，使用``<script>``进行jsonp请求\n- 现代浏览器中**多窗口通信**使用HTML5规范的targetWindow.postMessage(data, origin);其中data是需要发送的对象，origin是目标窗口的origin。window.addEventListener('message', handler, false);handler的event.data是postMessage发送来的数据，event.origin是发送窗口的origin，event.source是发送消息的窗口引用\n- 内部服务器代理请求跨域url，然后返回数据\n- 跨域请求数据，现代浏览器可使用HTML5规范的CORS功能，只要目标服务器返回HTTP头部**``Access-Control-Allow-Origin: *``**即可像普通ajax一样访问跨域资源",
+    "description": "<p>javascript跨域通信</p>\n",
+    "answer": "<p>同源：两个文档同源需满足</p>\n<ol>\n<li>协议相同</li>\n<li>域名相同</li>\n<li>端口相同</li>\n</ol>\n<p>跨域通信：js进行DOM操作、通信时如果目标与当前窗口不满足同源条件，浏览器为了安全会阻止跨域操作。跨域通信通常有以下方法</p>\n<ul>\n<li>如果是log之类的简单<strong>单项通信</strong>，新建<code>&lt;img&gt;</code>,<code>&lt;script&gt;</code>,<code>&lt;link&gt;</code>,<code>&lt;iframe&gt;</code>元素，通过src，href属性设置为目标url。实现跨域请求</li>\n<li>如果请求<strong>json数据</strong>，使用<code>&lt;script&gt;</code>进行jsonp请求</li>\n<li>现代浏览器中<strong>多窗口通信</strong>使用HTML5规范的targetWindow.postMessage(data, origin);其中data是需要发送的对象，origin是目标窗口的origin。window.addEventListener(&#39;message&#39;, handler, false);handler的event.data是postMessage发送来的数据，event.origin是发送窗口的origin，event.source是发送消息的窗口引用</li>\n<li>内部服务器代理请求跨域url，然后返回数据</li>\n<li>跨域请求数据，现代浏览器可使用HTML5规范的CORS功能，只要目标服务器返回HTTP头部<strong><code>Access-Control-Allow-Origin: *</code></strong>即可像普通ajax一样访问跨域资源</li>\n</ul>\n",
     "options": []
 }

@@ -3,7 +3,7 @@
     "tag": "javascript",
     "difficulty": "1",
     "from": "https://github.com/qiu-deqing/fe-interview",
-    "description": "请用代码写出(今天是星期x)其中x表示当天是星期几,如果当天是星期一,输出应该是\"今天是星期一\"",
-    "answer": "```\nvar days = ['日','一','二','三','四','五','六'];\nvar date = new Date();\n\nconsole.log('今天是星期' + days[date.getDay()]);\n```",
+    "description": "<p>请用代码写出(今天是星期x)其中x表示当天是星期几,如果当天是星期一,输出应该是&quot;今天是星期一&quot;</p>\n",
+    "answer": "<pre><code>var days = [&#39;日&#39;,&#39;一&#39;,&#39;二&#39;,&#39;三&#39;,&#39;四&#39;,&#39;五&#39;,&#39;六&#39;];\nvar date = new Date();\n\nconsole.log(&#39;今天是星期&#39; + days[date.getDay()]);\n</code></pre>",
     "options": []
 }

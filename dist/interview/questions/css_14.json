@@ -3,7 +3,7 @@
     "tag": "css",
     "difficulty": "1",
     "from": "https://github.com/qiu-deqing/fe-interview",
-    "description": "外边距折叠(collapsing margins)",
-    "answer": "毗邻的两个或多个``margin``会合并成一个margin，叫做外边距折叠。规则如下：\n\n1. 两个或多个毗邻的普通流中的块元素垂直方向上的margin会折叠\n2. 浮动元素/inline-block元素/绝对定位元素的margin不会和垂直方向上的其他元素的margin折叠\n3. 创建了块级格式化上下文的元素，不会和它的子元素发生margin折叠\n4. 元素自身的margin-bottom和margin-top相邻时也会折叠",
+    "description": "<p>外边距折叠(collapsing margins)</p>\n",
+    "answer": "<p>毗邻的两个或多个<code>margin</code>会合并成一个margin，叫做外边距折叠。规则如下：</p>\n<ol>\n<li>两个或多个毗邻的普通流中的块元素垂直方向上的margin会折叠</li>\n<li>浮动元素/inline-block元素/绝对定位元素的margin不会和垂直方向上的其他元素的margin折叠</li>\n<li>创建了块级格式化上下文的元素，不会和它的子元素发生margin折叠</li>\n<li>元素自身的margin-bottom和margin-top相邻时也会折叠</li>\n</ol>\n",
     "options": []
 }

@@ -3,7 +3,7 @@
     "tag": "css",
     "difficulty": "1",
     "from": "https://github.com/qiu-deqing/fe-interview",
-    "description": "PNG,GIF,JPG的区别及如何选",
-    "answer": "参考资料： [选择正确的图片格式](http://www.yuiblog.com/blog/2008/11/04/imageopt-2/)\n**GIF**:\n\n1. 8位像素，256色\n2. 无损压缩\n3. 支持简单动画\n4. 支持boolean透明\n5. 适合简单动画\n\n**JPEG**：\n\n1. 颜色限于256\n2. 有损压缩\n3. 可控制压缩质量\n4. 不支持透明\n5. 适合照片\n\n**PNG**：\n\n1. 有PNG8和truecolor PNG\n2. PNG8类似GIF颜色上限为256，文件小，支持alpha透明度，无动画\n3. 适合图标、背景、按钮",
+    "description": "<p>PNG,GIF,JPG的区别及如何选</p>\n",
+    "answer": "<p>参考资料： <a href=\"http://www.yuiblog.com/blog/2008/11/04/imageopt-2/\">选择正确的图片格式</a>\n<strong>GIF</strong>:</p>\n<ol>\n<li>8位像素，256色</li>\n<li>无损压缩</li>\n<li>支持简单动画</li>\n<li>支持boolean透明</li>\n<li>适合简单动画</li>\n</ol>\n<p><strong>JPEG</strong>：</p>\n<ol>\n<li>颜色限于256</li>\n<li>有损压缩</li>\n<li>可控制压缩质量</li>\n<li>不支持透明</li>\n<li>适合照片</li>\n</ol>\n<p><strong>PNG</strong>：</p>\n<ol>\n<li>有PNG8和truecolor PNG</li>\n<li>PNG8类似GIF颜色上限为256，文件小，支持alpha透明度，无动画</li>\n<li>适合图标、背景、按钮</li>\n</ol>\n",
     "options": []
 }

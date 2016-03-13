@@ -3,7 +3,7 @@
     "tag": "javascript",
     "difficulty": "1",
     "from": "https://github.com/qiu-deqing/fe-interview",
-    "description": "+运算符工作流程",
-    "answer": "1. 如果有操作数是对象，转换为原始值\n2. 此时如果有**一个操作数是字符串**，其他的操作数都转换为字符串并执行连接\n3. 否则：**所有操作数都转换为数字并执行加法**",
+    "description": "<p>+运算符工作流程</p>\n",
+    "answer": "<ol>\n<li>如果有操作数是对象，转换为原始值</li>\n<li>此时如果有<strong>一个操作数是字符串</strong>，其他的操作数都转换为字符串并执行连接</li>\n<li>否则：<strong>所有操作数都转换为数字并执行加法</strong></li>\n</ol>\n",
     "options": []
 }
