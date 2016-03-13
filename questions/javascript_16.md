@@ -1,0 +1,17 @@
+
+- type: reply
+- tag: javascript
+- difficulty:  1
+- from: https://github.com/hawx1993/Front-end-Interview-questions
+--------
+
+对象到字符串的转换步骤
+
+---------
+
+
+1. 如果对象有toString()方法，javascript调用它。如果返回一个原始值（primitive value如：string number boolean）,将这个值转换为字符串作为结果
+2. 如果对象没有toString()方法或者返回值不是原始值，javascript寻找对象的valueOf()方法，如果存在就调用它，返回结果是原始值则转为字符串作为结果
+3. 否则，javascript不能从toString()或者valueOf()获得一个原始值，此时throws a TypeError
+
+
