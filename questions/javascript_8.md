@@ -3,6 +3,7 @@
 - tag: javascript
 - difficulty:  1
 - from: https://github.com/hawx1993/Front-end-Interview-questions
+
 --------
 
 什么闭包,闭包有什么用

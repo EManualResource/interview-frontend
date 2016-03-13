@@ -1,0 +1,14 @@
+{
+  "name": "front-end-interview-questions",
+  "version": "1.0.0",
+  "description": "1. 按照source 里面的格式复制FE-interview上的内容 2. 执行 ```shell $ make ```",
+  "main": "process.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-fs-extra": "^0.8.1"
+  }
+}

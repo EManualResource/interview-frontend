@@ -2,7 +2,7 @@
     "type": "reply",
     "tag": "javascript",
     "difficulty": "1",
-    "from": "https",
+    "from": "https://github.com/hawx1993/front-end-interview-questions",
     "description": "如何判断一个对象是否为数组",
     "answer": "如果浏览器支持Array.isArray()可以直接判断否则需进行必要判断\n\n```\n/**\n * 判断一个对象是否是数组，参数不是对象或者不是数组，返回false\n *\n * @param {Object} arg 需要测试是否为数组的对象\n * @return {Boolean} 传入参数是数组返回true，否则返回false\n */\nfunction isArray(arg) {\n    if (typeof arg === 'object') {\n        return Object.prototype.toString.call(arg) === '[object Array]';\n    }\n    return false;\n}\n```",
     "options": []

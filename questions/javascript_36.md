@@ -3,6 +3,7 @@
 - tag: javascript
 - difficulty:  1
 - from: https://github.com/hawx1993/Front-end-Interview-questions
+
 --------
 
 解析一个完整的url,返回Object包含域与window.location相同

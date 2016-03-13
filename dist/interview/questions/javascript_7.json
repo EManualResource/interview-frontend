@@ -2,7 +2,7 @@
     "type": "reply",
     "tag": "javascript",
     "difficulty": "1",
-    "from": "https",
+    "from": "https://github.com/hawx1993/front-end-interview-questions",
     "description": "javascript有哪几种数据类型",
     "answer": "六种基本数据类型\n\n- undefined\n- null\n- string\n- boolean\n- number\n- [symbol](https://developer.mozilla.org/en-US/docs/Glossary/Symbol)(ES6)\n\n一种引用类型\n\n- Object",
     "options": []

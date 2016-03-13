@@ -3,6 +3,7 @@
 - tag: javascript
 - difficulty:  1
 - from: https://github.com/hawx1993/Front-end-Interview-questions
+
 --------
 
 以下函数的作用是?空白区域应该填写什么

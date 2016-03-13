@@ -2,7 +2,7 @@
     "type": "reply",
     "tag": "javascript",
     "difficulty": "1",
-    "from": "https",
+    "from": "https://github.com/hawx1993/front-end-interview-questions",
     "description": "现有一个字符串richText,是一段富文本,需要显示在页面上.有个要求,需要给其中只包含一个img元素的p标签增加一个叫pic的class.请编写代码实现.可以使用jQuery或KISSY.",
     "answer": "function richText(text) {\n        var div = document.createElement('div');\n        div.innerHTML = text;\n        var p = div.getElementsByTagName('p');\n        var i, len;\n\n        for (i = 0, len = p.length; i < len; ++i) {\n            if (p[i].getElementsByTagName('img').length === 1) {\n                p[i].classList.add('pic');\n            }\n        }\n\n        return div.innerHTML;\n    }",
     "options": []

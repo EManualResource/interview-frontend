@@ -2,7 +2,7 @@
     "type": "reply",
     "tag": "javascript",
     "difficulty": "1",
-    "from": "https",
+    "from": "https://github.com/hawx1993/front-end-interview-questions",
     "description": "现有一个Page类,其原型对象上有许多以post开头的方法(如postMsg);另有一拦截函数chekc,只返回ture或false.请设计一个函数,该函数应批量改造原Page的postXXX方法,在保留其原有功能的同时,为每个postXXX方法增加拦截验证功能,当chekc返回true时继续执行原postXXX方法,返回false时不再执行原postXXX方法",
     "answer": "```\nfunction Page() {}\n\nPage.prototype = {\n  constructor: Page,\n\n  postA: function (a) {\n    console.log('a:' + a);\n  },\n  postB: function (b) {\n    console.log('b:' + b);\n  },\n  postC: function (c) {\n    console.log('c:' + c);\n  },\n  check: function () {\n    return Math.random() > 0.5;\n  }\n}\n\nfunction checkfy(obj) {\n  for (var key in obj) {\n    if (key.indexOf('post') === 0 && typeof obj[key] === 'function') {\n      (function (key) {\n        var fn = obj[key];\n        obj[key] = function () {\n          if (obj.check()) {\n            fn.apply(obj, arguments);\n          }\n        };\n      }(key));\n    }\n  }\n} // end checkfy()\n\ncheckfy(Page.prototype);\n\nvar obj = new Page();\n\nobj.postA('checkfy');\nobj.postB('checkfy');\nobj.postC('checkfy');\n```",
     "options": []

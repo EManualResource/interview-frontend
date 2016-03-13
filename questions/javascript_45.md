@@ -3,6 +3,7 @@
 - tag: javascript
 - difficulty:  1
 - from: https://github.com/hawx1993/Front-end-Interview-questions
+
 --------
 
 有一个大数组,var a = ['1', '2', '3', ...];a的长度是100,内容填充随机整数的字符串.请先构造此数组a,然后设计一个算法将其内容去重

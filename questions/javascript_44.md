@@ -3,6 +3,7 @@
 - tag: javascript
 - difficulty:  1
 - from: https://github.com/hawx1993/Front-end-Interview-questions
+
 --------
 
 使用原生javascript给下面列表中的li节点绑定点击事件,点击时创建一个Object对象,兼容IE和标准浏览器

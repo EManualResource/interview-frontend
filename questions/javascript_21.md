@@ -3,6 +3,7 @@
 - tag: javascript
 - difficulty:  1
 - from: https://github.com/hawx1993/Front-end-Interview-questions
+
 --------
 
 DOM事件模型是如何的,编写一个EventUtil工具类实现事件管理兼容

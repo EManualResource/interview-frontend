@@ -3,6 +3,7 @@
 - tag: javascript
 - difficulty:  1
 - from: https://github.com/hawx1993/Front-end-Interview-questions
+
 --------
 
 请实现一个Event类,继承自此类的对象都会拥有两个方法on,off,once和trigger

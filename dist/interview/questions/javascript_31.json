@@ -2,7 +2,7 @@
     "type": "reply",
     "tag": "javascript",
     "difficulty": "1",
-    "from": "https",
+    "from": "https://github.com/hawx1993/front-end-interview-questions",
     "description": "完成一个函数,接受数组作为参数,数组元素为整数或者数组,数组元素包含整数或数组,函数返回扁平化后的数组",
     "answer": "如：[1, [2, [ [3, 4], 5], 6]] => [1, 2, 3, 4, 5, 6]\n\n```\n    var data =  [1, [2, [ [3, 4], 5], 6]];\n\n    function flat(data, result) {\n        var i, d, len;\n        for (i = 0, len = data.length; i < len; ++i) {\n            d = data[i];\n            if (typeof d === 'number') {\n                result.push(d);\n            } else {\n                flat(d, result);\n            }\n        }\n    }\n\n    var result = [];\n    flat(data, result);\n\n    console.log(result);\n```",
     "options": []

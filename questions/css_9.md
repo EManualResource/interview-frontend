@@ -3,6 +3,7 @@
 - tag: css
 - difficulty:  1
 - from: https://github.com/hawx1993/Front-end-Interview-questions
+
 --------
 
 IE6浏览器有哪些常见的bug,缺陷或者与标准不一致的地方,如何解决

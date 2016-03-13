@@ -1,11 +1,13 @@
 'use strict'
 
-const fs = require('fs')
+const fs = require('node-fs-extra')
 const path = require('path')
 const DEST_DIR = '../../questions'
+const SOURCE_IMG_DIR = './source/img'
+const DEST_IMG_DIR = '../../questions/img'
 
+//资料来源
 let from = 'https://github.com/hawx1993/Front-end-Interview-questions'
-let dir_img = './source/img'
 let source = {
   'web': './source/web.md',
   'javascript': './source/javascript.md',
@@ -18,6 +20,7 @@ function render(question) {
 - tag: ${question.tag}
 - difficulty:  ${question.difficulty}
 - from: ${question.from}
+
 --------
 
 ${question.description}
@@ -68,18 +71,20 @@ function create_question(type) {
   })
 }
 
+function copyImageDir(){
+  try {
+    let res = fs.copySync(SOURCE_IMG_DIR, DEST_IMG_DIR)
+    console.log('copy finish')
+  } catch (err) {
+    console.error(err)
+  }  
+}
+
 create_question('web')
 create_question('javascript')
 create_question('css')
-// let res = render({
-//   type: 'type',
-//   tag: 'tag',
-//   difficulty: '1',
-//   from: 'from',
-//   description: 'description',
-//   answer: 'answer',
 
-// })
+copyImageDir()
 
 console.log('生成完毕🐔')
 

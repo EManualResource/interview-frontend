@@ -3,6 +3,7 @@
 - tag: javascript
 - difficulty:  1
 - from: https://github.com/hawx1993/Front-end-Interview-questions
+
 --------
 
 DOM元素e的e.getAttribute(propName)和e.propName有什么区别和联系

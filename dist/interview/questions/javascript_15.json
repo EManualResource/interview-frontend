@@ -2,7 +2,7 @@
     "type": "reply",
     "tag": "javascript",
     "difficulty": "1",
-    "from": "https",
+    "from": "https://github.com/hawx1993/front-end-interview-questions",
     "description": "==运算符判断相等的流程是怎样的",
     "answer": "1. 如果两个值类型相同，按照===比较方法进行比较\n2. 如果类型不同，使用如下规则进行比较\n  1. 如果其中一个值是null，另一个是undefined，它们相等\n  2. 如果一个值是**数字**另一个是**字符串**，将**字符串转换为数字**进行比较\n  3. 如果有布尔类型，将**true转换为1，false转换为0**，然后用==规则继续比较\n  4. 如果一个值是对象，另一个是数字或字符串，将对象转换为原始值然后用==规则继续比较\n  5. **其他所有情况都认为不相等**",
     "options": []

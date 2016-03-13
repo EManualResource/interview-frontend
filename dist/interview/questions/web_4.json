@@ -2,7 +2,7 @@
     "type": "reply",
     "tag": "web",
     "difficulty": "1",
-    "from": "https",
+    "from": "https://github.com/hawx1993/front-end-interview-questions",
     "description": "HTML全局属性(global attribute)有哪些",
     "answer": "参考资料：[MDN: html global attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)或者[W3C HTML global-attributes](http://www.w3.org/TR/html-markup/global-attributes.html#common.attrs.core)\n\n- `accesskey`:设置快捷键，提供快速访问元素如<a href=\"#\" accesskey=\"a\">aaa</a>在windows下的firefox中按``alt + shift + a``可激活元素\n- `class`:为元素设置类标识，多个类名用空格分开，CSS和javascript可通过class属性获取元素\n- `contenteditable`: 指定元素内容是否可编辑\n- `contextmenu`: 自定义鼠标右键弹出菜单内容\n- `data-*`: 为元素增加自定义属性\n- `dir`: 设置元素文本方向\n- `draggable`: 设置元素是否可拖拽\n- `dropzone`: 设置元素拖放类型： copy, move, link\n- `hidden`: 表示一个元素是否与文档。样式上会导致元素不显示，但是不能用这个属性实现样式效果\n- `id`: 元素id，文档内唯一\n- `lang`: 元素内容的的语言\n- `spellcheck`: 是否启动拼写和语法检查\n- `style`: 行内css样式\n- `tabindex`: 设置元素可以获得焦点，通过tab可以导航\n- `title`: 元素相关的建议信息\n- `translate`: 元素和子孙节点内容是否需要本地化",
     "options": []

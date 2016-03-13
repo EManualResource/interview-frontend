@@ -3,6 +3,7 @@
 - tag: javascript
 - difficulty:  1
 - from: https://github.com/hawx1993/Front-end-Interview-questions
+
 --------
 
 函数内部arguments变量有哪些特性,有哪些属性,如何将它转换为数组

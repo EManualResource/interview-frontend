@@ -3,6 +3,7 @@
 - tag: javascript
 - difficulty:  1
 - from: https://github.com/hawx1993/Front-end-Interview-questions
+
 --------
 
 编写一个函数实现form的序列化(即将一个表单中的键值序列化为可提交的字符串)

@@ -3,6 +3,7 @@
 - tag: web
 - difficulty:  1
 - from: https://github.com/hawx1993/Front-end-Interview-questions
+
 --------
 
 doctype是什么,举例常见doctype及特点

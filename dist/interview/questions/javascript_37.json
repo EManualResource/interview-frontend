@@ -2,7 +2,7 @@
     "type": "reply",
     "tag": "javascript",
     "difficulty": "1",
-    "from": "https",
+    "from": "https://github.com/hawx1993/front-end-interview-questions",
     "description": "完成函数getViewportSize返回指定窗口的视口尺寸",
     "answer": "```\n/**\n* 查询指定窗口的视口尺寸，如果不指定窗口，查询当前窗口尺寸\n**/\nfunction getViewportSize(w) {\n    w = w || window;\n\n    // IE9及标准浏览器中可使用此标准方法\n    if ('innerHeight' in w) {\n        return {\n            width: w.innerWidth,\n            height: w.innerHeight\n        };\n    }\n\n    var d = w.document;\n    // IE 8及以下浏览器在标准模式下\n    if (document.compatMode === 'CSS1Compat') {\n        return {\n            width: d.documentElement.clientWidth,\n            height: d.documentElement.clientHeight\n        };\n    }\n\n    // IE8及以下浏览器在怪癖模式下\n    return {\n        width: d.body.clientWidth,\n        height: d.body.clientHeight\n    };\n}\n```",
     "options": []
