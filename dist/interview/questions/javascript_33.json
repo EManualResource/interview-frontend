@@ -1,0 +1,9 @@
+{
+    "type": "reply",
+    "tag": "javascript",
+    "difficulty": "1",
+    "from": "https",
+    "description": "请评价以下事件监听器代码并给出改进意见",
+    "answer": "```\nif (window.addEventListener) {\n  var addListener = function (el, type, listener, useCapture) {\n    el.addEventListener(type, listener, useCapture);\n  };\n}\nelse if (document.all) {\n  addListener = function (el, type, listener) {\n    el.attachEvent('on' + type, function () {\n      listener.apply(el);\n    });\n  };\n}\n```\n\n作用：浏览器功能检测实现跨浏览器DOM事件绑定\n\n优点：\n\n1. 测试代码只运行一次，根据浏览器确定绑定方法\n2. 通过``listener.apply(el)``解决IE下监听器this与标准不一致的地方\n3. 在浏览器不支持的情况下提供简单的功能，在标准浏览器中提供捕获功能\n\n缺点：\n\n1. document.all作为IE检测不可靠，应该使用if(el.attachEvent)\n2. addListener在不同浏览器下API不一样\n3. ``listener.apply``使this与标准一致但监听器无法移除\n4. 未解决IE下listener参数event。 target问题\n\n改进:\n\n```\nvar addListener;\n\nif (window.addEventListener) {\n  addListener = function (el, type, listener, useCapture) {\n    el.addEventListener(type, listener, useCapture);\n    return listener;\n  };\n}\nelse if (window.attachEvent) {\n  addListener = function (el, type, listener) {\n    // 标准化this，event，target\n    var wrapper = function () {\n      var event = window.event;\n      event.target = event.srcElement;\n      listener.call(el, event);\n    };\n\n    el.attachEvent('on' + type, wrapper);\n    return wrapper;\n    // 返回wrapper。调用者可以保存，以后remove\n  };\n}\n```",
+    "options": []
+}

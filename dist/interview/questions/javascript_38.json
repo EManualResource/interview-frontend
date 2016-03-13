@@ -1,0 +1,9 @@
+{
+    "type": "reply",
+    "tag": "javascript",
+    "difficulty": "1",
+    "from": "https",
+    "description": "完成函数getScrollOffset返回窗口滚动条偏移量",
+    "answer": "/**\n     * 获取指定window中滚动条的偏移量，如未指定则获取当前window\n     * 滚动条偏移量\n     *\n     * @param {window} w 需要获取滚动条偏移量的窗口\n     * @return {Object} obj.x为水平滚动条偏移量,obj.y为竖直滚动条偏移量\n     */\n    function getScrollOffset(w) {\n        w =  w || window;\n        // 如果是标准浏览器\n        if (w.pageXOffset != null) {\n            return {\n                x: w.pageXOffset,\n                y: w.pageYOffset\n            };\n        }\n\n        // 老版本IE，根据兼容性不同访问不同元素\n        var d = w.document;\n        if (d.compatMode === 'CSS1Compat') {\n            return {\n                x: d.documentElement.scrollLeft,\n                y: d.documentElement.scrollTop\n            }\n        }\n\n        return {\n            x: d.body.scrollLeft,\n            y: d.body.scrollTop\n        };\n    }",
+    "options": []
+}

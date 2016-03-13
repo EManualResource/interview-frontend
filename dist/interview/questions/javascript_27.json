@@ -1,0 +1,9 @@
+{
+    "type": "reply",
+    "tag": "javascript",
+    "difficulty": "1",
+    "from": "https",
+    "description": "完成下面的tool-tip",
+    "answer": "![xxx](img/tip-box.jpg)",
+    "options": []
+}

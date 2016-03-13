@@ -1,0 +1,9 @@
+{
+    "type": "reply",
+    "tag": "javascript",
+    "difficulty": "1",
+    "from": "https",
+    "description": "有一个大数组,var a = ['1', '2', '3', ...];a的长度是100,内容填充随机整数的字符串.请先构造此数组a,然后设计一个算法将其内容去重",
+    "answer": "```\n    /**\n    * 数组去重\n    **/\n    function normalize(arr) {\n        if (arr && Array.isArray(arr)) {\n            var i, len, map = {};\n            for (i = arr.length; i >= 0; --i) {\n                if (arr[i] in map) {\n                    arr.splice(i, 1);\n                } else {\n                    map[arr[i]] = true;\n                }\n            }\n        }\n        return arr;\n    }\n\n    /**\n    * 用100个随机整数对应的字符串填充数组。\n    **/\n    function fillArray(arr, start, end) {\n        start = start == undefined ? 1 : start;\n        end = end == undefined ?  100 : end;\n\n        if (end <= start) {\n            end = start + 100;\n        }\n\n        var width = end - start;\n        var i;\n        for (i = 100; i >= 1; --i) {\n            arr.push('' + (Math.floor(Math.random() * width) + start));\n        }\n        return arr;\n    }\n\n    var input = [];\n    fillArray(input, 1, 100);\n    input.sort(function (a, b) {\n        return a - b;\n    });\n    console.log(input);\n\n    normalize(input);\n    console.log(input);\n```",
+    "options": []
+}

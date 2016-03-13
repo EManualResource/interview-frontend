@@ -1,0 +1,9 @@
+{
+    "type": "reply",
+    "tag": "javascript",
+    "difficulty": "1",
+    "from": "https",
+    "description": "请实现一个Event类,继承自此类的对象都会拥有两个方法on,off,once和trigger",
+    "answer": "function Event() {\n        if (!(this instanceof Event)) {\n            return new Event();\n        }\n        this._callbacks = {};\n    }\n    Event.prototype.on = function (type, handler) {\n        this_callbacks = this._callbacks || {};\n        this._callbacks[type] = this.callbacks[type] || [];\n        this._callbacks[type].push(handler);\n\n        return this;\n    };\n\n    Event.prototype.off = function (type, handler) {\n        var list = this._callbacks[type];\n\n        if (list) {\n            for (var i = list.length; i >= 0; --i) {\n                if (list[i] === handler) {\n                    list.splice(i, 1);\n                }\n            }\n        }\n\n        return this;\n    };\n\n    Event.prototype.trigger = function (type, data) {\n        var list = this._callbacks[type];\n\n        if (list) {\n            for (var i = 0, len = list.length; i < len; ++i) {\n                list[i].call(this, data);\n            }\n        }\n    };\n\n    Event.prototype.once = function (type, handler) {\n        var self = this;\n\n        function wrapper() {\n            handler.apply(self, arguments);\n            self.off(type, wrapper);\n        }\n        this.on(type, wrapper);\n        return this;\n    };",
+    "options": []
+}

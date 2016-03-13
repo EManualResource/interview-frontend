@@ -1,0 +1,9 @@
+{
+    "type": "reply",
+    "tag": "javascript",
+    "difficulty": "1",
+    "from": "https",
+    "description": "javascript有哪些方法定义对象",
+    "answer": "1. 对象字面量： `var obj = {};`\n2. 构造函数： `var obj = new Object();`\n3. Object.create(): `var obj = Object.create(Object.prototype);`",
+    "options": []
+}
